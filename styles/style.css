@@ -284,6 +284,37 @@ section{
     margin: 1rem 2rem;
 }
 
+.summary{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 4rem 2rem 5rem;
+}
+
+.summary .section-list{
+    background: #fff;
+    padding: 2rem;
+}
+
+.summary .list-header{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+
+.summary .list-item{
+    padding: 1.4rem 0;
+    border-bottom: 1px solid #f1f4f6;
+}
+
+/* part of challenge */
+.list-item:last-child{
+    border-bottom: none;
+}
+
 /* Media Query */
 
 @media (max-width: 1200px){    
@@ -356,5 +387,9 @@ section{
 
     .topics{
         grid-template-columns: 1fr;
+    }
+
+    .summary .container{
+        padding: 0;
     }
 }
